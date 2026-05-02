@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spam Detection App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Spam Detection App</h1>
+        <p>Enter a message below to check whether it is spam or not.</p>
+
+        <form method="POST">
+            <textarea name="message" placeholder="Type your message here...">{{ message }}</textarea>
+            <button type="submit">Check Message</button>
+        </form>
+
+        {% if result %}
+        <div class="result-box">
+            <h2>Prediction: {{ result }}</h2>
+            <p>Confidence: {{ confidence }}%</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
