@@ -23,7 +23,6 @@ def index():
     error       = None
 
     if request.method == 'POST':
-        
         message = request.form.get('message', '').strip()
 
         if not message:
