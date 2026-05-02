@@ -26,6 +26,7 @@ Task3-Spam-Detection/
 ├── model.py                ← Model training script
 ├── spam_model.pkl          ← Trained Naive Bayes model
 ├── vectorizer.pkl          ← Saved TF-IDF vectorizer
+├── confusion_matrix.png    ← Model evaluation plot
 ├── requirements.txt        ← Python dependencies
 ├── .gitignore              ← Git ignore rules
 │
